@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lmlte</title>
+	<!--
+    - favicon
+  -->
+	<link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+	<!--
+    - custom css link
+  -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<!--
+    - google font link
+  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<!--contactform script-->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			// https://dashboard.emailjs.com/admin/account
+			emailjs.init('');
+		})();
+	</script>
+</head>
+<body>
+	<!--
+    - #MAIN
+  -->
+	<main>
+		<!--
+      - #SIDEBAR
+    -->
+		<aside class="sidebar" data-sidebar>
+			<div class="sidebar-info">
+				<figure class="avatar-box">
+					<img src="./assets/images/my_avatar.png" alt="lmlte" width="80">
+				</figure>
+				<div class="info-content">
+					<h1 class="name" title="lmlte">lmlte</h1>
+					<p class="title">Веб-разработка</p>
+				</div>
+				<button class="info_more-btn" data-sidebar-btn>
+					<span>Показать контакты</span>
+					<ion-icon name="chevron-down"></ion-icon>
+				</button>
+			</div>
+			<div class="sidebar-info_more">
+				<div class="separator"></div>
+				<ul class="contacts-list">
+					<li class="contact-item">
+						<div class="icon-box">
+							<ion-icon name="location-outline"></ion-icon>
+						</div>
+						<div class="contact-info">
+							<p class="contact-title">Location</p>
+							<address>Россия</address>
+						</div>
+					</li>
+				</ul>
+				<div class="separator"></div>
+				<ul class="social-list">
+					<li class="social-item">
+						<a href="https://github.com/lmlte" class="social-link">
+							<ion-icon name="logo-github"></ion-icon>
+						</a>
+					</li>
+					<li class="social-item">
+						<a href="https://twitter.com/lmlte" class="social-link">
+							<ion-icon name="logo-twitter"></ion-icon>
+						</a>
+					</li>
+					<li class="social-item">
+						<a href="https://www.linkedin.com/in/lmlte/" class="social-link">
+							<ion-icon name="logo-linkedin"></ion-icon>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<!--
+      - #main-content
+    -->
+		<div class="main-content">
+			<!--
+        - #ABOUT
+      -->
+			<article class="about  active" data-page="about">
+				<header>
+					<h2 class="h2 article-title">Обо мне</h2>
+				</header>
+				<section class="about-text">
+					<p>
+						<strong>Привет! Добро пожаловать на мою страницу.</strong> Я lmlte, учусь на втором курсе. <br><br>
+					</p>
+				</section>
+				<!--
+          - service
+        -->
+				<section class="service">
+					<h3 class="h3 service-title">Чем я занимаюсь</h3>
+					<ul class="service-list">
+						<li class="service-item">
+							<div class="service-icon-box">
+								<img src="./assets/images/icon-dev.svg" alt="Иконка веб-разработки" width="40">
+							</div>
+							<div class="service-content-box">
+								<h4 class="h4 service-item-title">Веб-разработка</h4>
+								<p class="service-item-text">
+									Изучение Интернета для создания сложных веб-сайтов.
+								</p>
+							</div>
+						</li>
+						<li class="service-item">
+							<div class="service-icon-box">
+								<img src="./assets/images/icon-design.svg
+                " alt="Иконка веб-дизайна" width="40">
+							</div>
+							<div class="service-content-box">
+								<h4 class="h4 service-item-title">Веб-дизайн</h4>
+								<p class="service-item-text">
+									Я пробую свои силы в разработке макетов, архитектур программного обеспечения.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</article>
+		</div>
+	</main>
+	<!--
+    - custom js link
+  -->
+	<script src="./assets/js/script.js"></script>
+	<!--
+    - ionicon link
+  -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
